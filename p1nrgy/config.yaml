@@ -1,9 +1,9 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: p1nrgy
+name: p1nrgy TEST HD
 version: "0.0.4"
 slug: p1nrgy
 description: p1nrgy add-on to read data from a p1nrgy smart meter and publish it to MQTT
-url: "https://github.com/erwindouna/p1nrgy-addon"
+url: "https://github.com/hans-2022/p1ngry-addon"
 arch:
   - aarch64
   - amd64
@@ -17,7 +17,7 @@ usb: true
 options:
   dsmr_enabled: true
   dsmr_mode: "serial"
-  dsmr_serial_device: "/dev/ttyUSB0"
+  dsmr_serial_device: "/dev/ttyUSB1"
   dsmr_serial_baud: 115200
   dsmr_serial_databits: 8
   dsmr_serial_parity: "N"
