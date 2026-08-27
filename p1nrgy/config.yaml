@@ -22,7 +22,6 @@ options:
   dsmr_serial_databits: 8
   dsmr_serial_parity: "N"
   dsmr_serial_stopbits: 1
-# for EMQX / MQTT
   mqtt_host: ""
   mqtt_port: 1883
   mqtt_username: ""
@@ -37,7 +36,6 @@ schema:
   dsmr_serial_databits: int
   dsmr_serial_parity: str
   dsmr_serial_stopbits: int
-# for EMQX / MQTT  
   mqtt_host: str
   mqtt_port: port
   mqtt_username: str
