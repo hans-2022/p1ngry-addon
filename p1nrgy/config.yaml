@@ -1,5 +1,5 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: p1nrgy TEST HD 123
+name: p1nrgy TEST HD 456
 version: "0.0.4"
 slug: p1nrgy
 description: p1nrgy add-on to read data from a p1nrgy smart meter and publish it to MQTT
