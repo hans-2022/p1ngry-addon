@@ -9,7 +9,7 @@ arch:
   - amd64
 init: false
 services:
-  - mqtt:need
+#  - mqtt:need
 map:
   - share:rw
 uart: true
