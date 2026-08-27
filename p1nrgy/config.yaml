@@ -1,5 +1,5 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
-name: p1nrgy TEST HD test switch
+name: p1nrgy TEST HD test debug logging
 version: "0.0.4"
 slug: p1nrgy
 description: p1nrgy add-on to read data from a p1nrgy smart meter and publish it to MQTT
@@ -28,7 +28,7 @@ options:
   mqtt_client_id: "p1nrgy_hass_addon"
   mqtt_topic: "p1nrgy/data"
 # logging datagrams
-  test_switch: false
+  debug_logging: false
 schema:
   dsmr_enabled: bool
   dsmr_mode: str
@@ -45,5 +45,5 @@ schema:
   mqtt_client_id: str
   mqtt_topic: str
 # logging datagrams
-  test_switch: bool
+  debug_logging: bool
 # image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
