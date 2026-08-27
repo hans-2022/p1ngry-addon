@@ -28,7 +28,7 @@ options:
   mqtt_client_id: "p1nrgy_hass_addon"
   mqtt_topic: "p1nrgy/data"
 # logging datagrams
-  debug_logging: false
+  test_switch: false
 schema:
   dsmr_enabled: bool
   dsmr_mode: str
@@ -45,5 +45,5 @@ schema:
   mqtt_client_id: str
   mqtt_topic: str
 # logging datagrams
-  debug_logging: bool
+  test_switch: bool
 # image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
