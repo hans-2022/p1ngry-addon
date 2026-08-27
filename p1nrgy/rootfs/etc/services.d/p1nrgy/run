@@ -21,17 +21,17 @@ main() {
   DSMR_ENABLED="$(bashio::config 'dsmr_enabled')"
   DSMR_MODE="$(bashio::config 'dsmr_mode')"
   DSMR_SERIAL_DEVICE="$(bashio::config 'dsmr_serial_device')"
-  DSMR_SERIAL_BAUDRATE="$(bashio::config 'dsmr_serial_baudrate')"
+  DSMR_SERIAL_BAUDRATE="$(bashio::config 'dsmr_serial_baud')"
   DSMR_SERIAL_DATABITS="$(bashio::config 'dsmr_serial_databits')"
   DSMR_SERIAL_PARITY="$(bashio::config 'dsmr_serial_parity')"
   DSMR_SERIAL_STOPBITS="$(bashio::config 'dsmr_serial_stopbits')"
 
-  MQTT_HOST="$(bashio::services mqtt 'host')"
-  MQTT_PORT="$(bashio::services mqtt 'port')"
-  MQTT_USERNAME="$(bashio::services mqtt 'username')"
-  MQTT_PASSWORD="$(bashio::services mqtt 'password')"
-  MQTT_CLIENT_ID="p1nrgy_hass_addon"
-  MQTT_TOPIC="p1nrgy/data"
+  MQTT_HOST="$(bashio::config 'mqtt_host')"
+  MQTT_PORT="$(bashio::config 'mqtt_port')"
+  MQTT_USERNAME="$(bashio::config 'mqtt_username')"
+  MQTT_PASSWORD="$(bashio::config 'mqtt_password')"
+  MQTT_CLIENT_ID="$(bashio::config 'mqtt_client_id')"
+  MQTT_TOPIC="$(bashio::config 'mqtt_topic')"
 
   export DSMR_ENABLED
   export DSMR_MODE
