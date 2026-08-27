@@ -17,11 +17,18 @@ usb: true
 options:
   dsmr_enabled: true
   dsmr_mode: "serial"
-  dsmr_serial_device: "/dev/ttyUSB1"
+  dsmr_serial_device: "/dev/serial/by-id/..."
   dsmr_serial_baud: 115200
   dsmr_serial_databits: 8
   dsmr_serial_parity: "N"
   dsmr_serial_stopbits: 1
+# for EMQX / MQTT
+  mqtt_host: ""
+  mqtt_port: 1883
+  mqtt_username: ""
+  mqtt_password: ""
+  mqtt_client_id: "p1nrgy_hass_addon"
+  mqtt_topic: "p1nrgy/data"  
 schema:
   dsmr_enabled: bool
   dsmr_mode: str
@@ -30,4 +37,11 @@ schema:
   dsmr_serial_databits: int
   dsmr_serial_parity: str
   dsmr_serial_stopbits: int
+# for EMQX / MQTT  
+  mqtt_host: str
+  mqtt_port: port
+  mqtt_username: str
+  mqtt_password: password
+  mqtt_client_id: str
+  mqtt_topic: str
 # image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
