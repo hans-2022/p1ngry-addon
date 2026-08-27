@@ -30,4 +30,4 @@ schema:
   dsmr_serial_databits: int
   dsmr_serial_parity: str
   dsmr_serial_stopbits: int
-image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
+# image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
