@@ -27,7 +27,7 @@ options:
   mqtt_username: ""
   mqtt_password: ""
   mqtt_client_id: "p1nrgy_hass_addon"
-  mqtt_topic: "p1nrgy/data"  
+  mqtt_topic: "p1nrgy/data"
 schema:
   dsmr_enabled: bool
   dsmr_mode: str
