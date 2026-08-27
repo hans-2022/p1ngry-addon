@@ -20,12 +20,15 @@ options:
   dsmr_serial_databits: 8
   dsmr_serial_parity: "N"
   dsmr_serial_stopbits: 1
+# EMQX MQTT
   mqtt_host: ""
   mqtt_port: 1883
   mqtt_username: ""
   mqtt_password: ""
   mqtt_client_id: "p1nrgy_hass_addon"
   mqtt_topic: "p1nrgy/data"
+# logging datagrams
+  debug_logging: false
 schema:
   dsmr_enabled: bool
   dsmr_mode: str
@@ -34,10 +37,13 @@ schema:
   dsmr_serial_databits: int
   dsmr_serial_parity: str
   dsmr_serial_stopbits: int
+# EMQX MQTT
   mqtt_host: str
   mqtt_port: port
   mqtt_username: str
   mqtt_password: password
   mqtt_client_id: str
   mqtt_topic: str
+# logging datagrams
+  debug_logging: bool
 # image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
