@@ -1,6 +1,6 @@
 # https://developers.home-assistant.io/docs/add-ons/configuration#add-on-config
 name: p1nrgy TEST HD test debug logging
-version: "0.0.4"
+version: "0.0.5-HD.1"
 slug: p1nrgy
 description: p1nrgy add-on to read data from a p1nrgy smart meter and publish it to MQTT
 url: "https://github.com/hans-2022/p1ngry-addon"
@@ -46,4 +46,5 @@ schema:
   mqtt_topic: str
 # logging datagrams
   debug_logging: bool
+image: "ghcr.io/hans-2022/p1nrgy"
 # image: "ghcr.io/erwindouna/p1nrgy" # TODO: Uncomment this line to use a prebuilt image
