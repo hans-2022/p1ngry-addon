@@ -26,6 +26,8 @@ main() {
   DSMR_SERIAL_PARITY="$(bashio::config 'dsmr_serial_parity')"
   DSMR_SERIAL_STOPBITS="$(bashio::config 'dsmr_serial_stopbits')"
 
+  DEBUG_LOGGING="$(bashio::config 'debug_logging')"
+
   MQTT_HOST="$(bashio::config 'mqtt_host')"
   MQTT_PORT="$(bashio::config 'mqtt_port')"
   MQTT_USERNAME="$(bashio::config 'mqtt_username')"
@@ -41,6 +43,8 @@ main() {
   export DSMR_SERIAL_PARITY
   export DSMR_SERIAL_STOPBITS
   export DSMR_SERIAL_TIMEOUT="20s"
+
+  export DEBUG_LOGGING
 
   export MQTT_BROKER="tcp://${MQTT_HOST}:${MQTT_PORT}"
   export MQTT_USERNAME
