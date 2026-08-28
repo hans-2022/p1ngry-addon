@@ -27,6 +27,7 @@ main() {
   DSMR_SERIAL_STOPBITS="$(bashio::config 'dsmr_serial_stopbits')"
 
   DEBUG_LOGGING="$(bashio::config 'debug_logging')"
+  bashio::log.info "DEBUG_LOGGING=${DEBUG_LOGGING}"
 
   MQTT_HOST="$(bashio::config 'mqtt_host')"
   MQTT_PORT="$(bashio::config 'mqtt_port')"
