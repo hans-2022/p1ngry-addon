@@ -14,7 +14,7 @@ The idea is also to keep it as simple as it gets, reader the DSMR data, parsing 
 
 In order to install this add-on, you need to add this repository to your Home Assistant instance. You can do this by clicking the badge below:
 
-[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%hans-2022%2Fp1ngry-addon)
+[![Open your Home Assistant instance and show the add add-on repository dialog with a specific repository URL pre-filled.](https://my.home-assistant.io/badges/supervisor_add_addon_repository.svg)](https://my.home-assistant.io/redirect/supervisor_add_addon_repository/?repository_url=https%3A%2F%2Fgithub.com%2Fhans-2022%2Fp1ngry-addon)
 
 I wwas looking for a lightweight appraoch to capture P1 smart meter telegrams. Liked p1nrgy. This fork was made for following reasons: 
 
