@@ -17,6 +17,7 @@ options:
   dsmr_mode: "serial"
   dsmr_serial_device: "/dev/serial/by-id/..."
   dsmr_serial_baud: 115200
+  dsmr_serial_baudrate: 115200
   dsmr_serial_databits: 8
   dsmr_serial_parity: "N"
   dsmr_serial_stopbits: 1
@@ -34,6 +35,7 @@ schema:
   dsmr_mode: str
   dsmr_serial_device: "device(subsystem=tty)"
   dsmr_serial_baud: int
+  dsmr_serial_baudrate: int
   dsmr_serial_databits: int
   dsmr_serial_parity: str
   dsmr_serial_stopbits: int
