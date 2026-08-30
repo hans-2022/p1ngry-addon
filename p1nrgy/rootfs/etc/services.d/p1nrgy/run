@@ -22,6 +22,7 @@ main() {
   DSMR_MODE="$(bashio::config 'dsmr_mode')"
   DSMR_SERIAL_DEVICE="$(bashio::config 'dsmr_serial_device')"
   DSMR_SERIAL_BAUDRATE="$(bashio::config 'dsmr_serial_baud')"
+  DSMR_SERIAL_BAUD="$(bashio::config 'dsmr_serial_baud')"
   DSMR_SERIAL_DATABITS="$(bashio::config 'dsmr_serial_databits')"
   DSMR_SERIAL_PARITY="$(bashio::config 'dsmr_serial_parity')"
   DSMR_SERIAL_STOPBITS="$(bashio::config 'dsmr_serial_stopbits')"
@@ -40,6 +41,7 @@ main() {
   export DSMR_MODE
   export DSMR_SERIAL_DEVICE
   export DSMR_SERIAL_BAUDRATE
+  export DSMR_SERIAL_BAUD
   export DSMR_SERIAL_DATABITS
   export DSMR_SERIAL_PARITY
   export DSMR_SERIAL_STOPBITS
@@ -58,6 +60,20 @@ main() {
   export SERVER_HOST="0.0.0.0"
   export SERVER_PORT=3000
   export SERVER_READ_TIMEOUT=60
+
+  bashio::log.info "DSMR_ENABLED=${DSMR_ENABLED}"
+  bashio::log.info "DSMR_MODE=${DSMR_MODE}"
+  bashio::log.info "DSMR_SERIAL_DEVICE=${DSMR_SERIAL_DEVICE}"
+  bashio::log.info "DSMR_SERIAL_BAUDRATE=${DSMR_SERIAL_BAUDRATE}"
+  bashio::log.info "DSMR_SERIAL_BAUD=${DSMR_SERIAL_BAUD}"
+  bashio::log.info "DSMR_SERIAL_DATABITS=${DSMR_SERIAL_DATABITS}"
+  bashio::log.info "DSMR_SERIAL_PARITY=${DSMR_SERIAL_PARITY}"
+  bashio::log.info "DSMR_SERIAL_STOPBITS=${DSMR_SERIAL_STOPBITS}"
+
+  bashio::log.info "MQTT_BROKER=${MQTT_BROKER}"
+  bashio::log.info "MQTT_USERNAME=${MQTT_USERNAME}"
+  bashio::log.info "MQTT_CLIENT_ID=${MQTT_CLIENT_ID}"
+  bashio::log.info "MQTT_TOPIC=${MQTT_TOPIC}"
 
   bashio::log.info "p1nrgy started"
 }
